@@ -187,7 +187,7 @@ Sugerencia: para establecer o devolver solo el contenido de texto de los element
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-4-1" data-toggle="tab">Definicion</a></li>
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-2" data-toggle="tab">Obtener Contenido</a></li>
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-3" data-toggle="tab">Obtener Atributos</a></li>
-                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="#tabs-4-0" data-toggle="tab">Vamos a aprender </a></li>
+                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="#tabs-1-0" data-toggle="tab">Vamos a aprender </a></li>
                
               
             </div>
@@ -216,26 +216,26 @@ Sugerencia: para establecer o devolver solo el contenido de texto de los element
                 <img src="images/get3.png" alt="" width="535" height="218"/>
                 </div>
                   
-                  <div class="tab-pane fade" id="tabs-4-0"><h4>Ejemplo</h4>
+                  <div class="tab-pane fade" id="tabs-1-0"><h4>Ejemplo</h4>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("#btn1").click(function(){
-    alert("Text: " + $("#test").text());
-  });
-  $("#btn2").click(function(){
-    alert("HTML: " + $("#test").html());
-  });
-});
-</script>
-</head>
-<body>
+                <script>
+                $(document).ready(function(){
+                  $("#btn1").click(function(){
+                    alert("Text: " + $("#test").text());
+                  });
+                  $("#btn2").click(function(){
+                    alert("HTML: " + $("#test").html());
+                  });
+                });
+                </script>
+                </head>
+                <body>
 
-<p id="test">This is some <b>bold</b> text in a paragraph.</p>
+                <p id="test">Este parrafo tiene resalta en <b>negrilla</b>.</p>
 
-<button id="btn1">Show Text</button>
-<button id="btn2">Show HTML</button>
-</div>
+                <button id="btn1">Ver Texto</button>
+                <button id="btn2">Ver Html</button>
+                </div>
 
               </div>
             </div>
@@ -255,7 +255,7 @@ $(document).ready(function(){
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-4-5" data-toggle="tab">Definicion</a></li>
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-6" data-toggle="tab">Establecer Contenido</a></li>
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-7" data-toggle="tab">Establecer Atributos</a></li>
-                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="Ejemplos1.html" data-toggle="tab">Vamos a aprender </a></li>
+                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="#tabs-2-0" data-toggle="tab">Vamos a aprender </a></li>
                
               
             </div>
@@ -278,6 +278,35 @@ $(document).ready(function(){
                 <img src="images/set2.png" alt="" width="635" height="218"/>
                 </div>
                 
+                <div class="tab-pane fade" id="tabs-2-0"><h4>Ejemplo</h4>
+                
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+                <script>
+                $(document).ready(function(){
+                  $("#btn3").click(function(){
+                    $("#test1").text("Hola Bienvenido a jquery!");
+                  });
+                  $("#btn4").click(function(){
+                    $("#test2").html("<b>Sigue aprendiendo mas!</b>");
+                  });
+                  $("#btn5").click(function(){
+                    $("#test3").val("Lo mejor en contenido");
+                  });
+                });
+                </script>
+                </head>
+                <body>
+
+                <p id="test1">Pulsa el boton Text</p>
+                <p id="test2">Pulsa el boton HTML</p>
+
+                <p>Input field: <input type="text" id="test3" value="Pulsa el boton cambiar"></p>
+
+                <button id="btn3">Cambiar Text</button>
+                <button id="btn4">Cmabiar HTML</button>
+                <button id="btn5">Cambiar los valores</button>
+                </div>
+
 
               </div>
             </div>
@@ -296,7 +325,7 @@ $(document).ready(function(){
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-12" data-toggle="tab">Método jQuery prepend()</a></li>
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-13" data-toggle="tab">Métodos jQuery after() y before()
 </a></li>
-                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="Ejemplos1.html" data-toggle="tab">Vamos a aprender </a></li>
+                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="#tabs-3-0" data-toggle="tab">Vamos a aprender </a></li>
                
               
             </div>
@@ -315,7 +344,34 @@ $(document).ready(function(){
                   <li>before()El método jQuery inserta contenido ANTES de los elementos HTML seleccionados.</li></p>
                 <img src="images/get3.png" alt="" width="535" height="218"/>
                 </div>
+                <div class="tab-pane fade" id="tabs-3-0"><h4>Ejemplo</h4>
                 
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+                <script>
+                $(document).ready(function(){
+                  $("#btn6").click(function(){
+                    $("p1").append(" <b>Agrega el texto</b>.");
+                  });
+
+                  $("#btn7").click(function(){
+                    $("ol").append("<li>Agrega el item</li>");
+                  });
+                });
+                </script>
+                </head>
+                <body>
+
+                <p1>Aqui inicia el parrafo</p1>
+                <p1>Esta es un linea de parrafo</p1>
+
+                <ol>
+                  <li>Item 1</li>
+                  <li>Item 2</li>
+                  <li>Item 3</li>
+                </ol>
+
+                <button id="btn6">Agrega mas texto</button>
+                <button id="btn7">Agrega mas items</button>
 
               </div>
             </div>
@@ -333,7 +389,7 @@ $(document).ready(function(){
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-4-14" data-toggle="tab">Definición</a></li>
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-15" data-toggle="tab">Método jQuery remove()</a></li>
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-16" data-toggle="tab">Método jQuery vacío ()</a></li>
-                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="Ejemplos1.html" data-toggle="tab">Vamos a aprender </a></li>
+                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="#tabs-4-0" data-toggle="tab">Vamos a aprender </a></li>
                
               
             </div>
@@ -343,20 +399,40 @@ $(document).ready(function(){
                 <div class="tab-pane fade show active" id="tabs-4-14">
                   <h4>JQUERY - REMOVE </h4>
                   <p>Para eliminar elementos y contenido, existen principalmente dos métodos jQuery:
-<li>remove()- Elimina el elemento seleccionado (y sus elementos secundarios)</li>
-<li>empty()- Elimina los elementos secundarios del elemento seleccionado</li>
+                  <li>remove()- Elimina el elemento seleccionado (y sus elementos secundarios)</li>
+                  <li>empty()- Elimina los elementos secundarios del elemento seleccionado</li>
 
-</p>
+                </p>
                 </div>
                 <div class="tab-pane fade" id="tabs-4-15"><h4>Método jQuery remove()</h4><p>TEl método jQuery remove()elimina los elementos seleccionados y sus elementos secundarios.</p>
-</p>
+                </p>
                   <img src="images/R1.png" alt="" width="535" height="218"/>
                 </div>
                 <div class="tab-pane fade" id="tabs-4-16"><h4>Método jQuery vacío () </h4><p>El método jQuery empty()elimina los elementos secundarios de los elementos seleccionados.</p>
                 <img src="images/R2.png" alt="" width="535" height="218"/>
                 </div>
+                <div class="tab-pane fade" id="tabs-4-0"><h4>Ejemplo</h4>
                 
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+                <script>
+                $(document).ready(function(){
+                  $("#btn8").click(function(){
+                    $("#div2").remove();
+                  });
+                });
+                </script>
+                </head>
+                <body>
 
+                <div id="div2" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+
+                  Este es un texto con div
+                <p>Este es un parrafo en el div.</p>
+                <p>Este es otro parrafo</p>
+
+                </div>
+                <br>
+                <button id="btn8">Remueve los elementos del div</button>
               </div>
             </div>
           </div>
@@ -373,7 +449,7 @@ $(document).ready(function(){
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-18" data-toggle="tab">Método jQuery addClass()</a></li>
                  <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-19" data-toggle="tab">Método jQuery removeClass()</a></li>
                   <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-20" data-toggle="tab">Método jQuery toggleClass()L</a></li>
-                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="Ejemplos2.html" data-toggle="tab">Vamos a aprender </a></li>
+                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="#tabs-5-0" data-toggle="tab">Vamos a aprender </a></li>
                
               
             </div>
@@ -383,12 +459,12 @@ $(document).ready(function(){
                 <div class="tab-pane fade show active" id="tabs-4-17">
                   <h4> jQUERY - CLASES CSS </h4>
                   <p>jQuery tiene varios métodos para la manipulación de CSS. Veremos los siguientes métodos:
- <li>addClass()- Agrega una o más clases a los elementos seleccionados</li>
-  <li>removeClass()- Elimina una o más clases de los elementos seleccionados</li>
-   <li>
-toggleClass()- Alterna entre agregar/eliminar clases de los elementos seleccionados</li>
-    <li>css()- Establece o devuelve el atributo de estilo</li>
-</p>
+                 <li>addClass()- Agrega una o más clases a los elementos seleccionados</li>
+                  <li>removeClass()- Elimina una o más clases de los elementos seleccionados</li>
+                   <li>
+                toggleClass()- Alterna entre agregar/eliminar clases de los elementos seleccionados</li>
+                    <li>css()- Establece o devuelve el atributo de estilo</li>
+                </p>
 
                 </div>
                 <div class="tab-pane fade" id="tabs-4-18"><h4>Método jQuery addClass()</h4><p>El siguiente ejemplo muestra cómo agregar atributos de clase a diferentes elementos. Por supuesto, puede seleccionar varios elementos al agregar clases:</p>
@@ -401,8 +477,40 @@ toggleClass()- Alterna entre agregar/eliminar clases de los elementos selecciona
                   <div class="tab-pane fade" id="tabs-4-20"><h4>Método jQuery toggleClass()</h4><p>El siguiente ejemplo mostrará cómo usar el toggleClass()método jQuery. Este método alterna entre agregar/eliminar clases de los elementos seleccionados:</p>
                   <img src="images/c3.png" alt="" width="535" height="218"/>
                 </div>
-                
-                 
+                <div class="tab-pane fade" id="tabs-5-0"><h4>Ejemplo</h4>
+                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+                <script>
+                $(document).ready(function(){
+                  $("#btn9").click(function(){
+                    $("h1, h2, p").addClass("blue");
+                    $("div1").addClass("important");
+                  });
+
+                });
+                </script>
+                <style> 
+                .important {
+                  font-weight: bold;
+                  font-size: xx-large;
+                }
+
+                .blue {
+                  color: blue;
+                }
+                </style>
+                </head>
+                <body>
+
+                <h1>Encabezado 1</h1>
+                <h2>Encabezado 2</h2>
+
+                <p2>Este es el inicio de un parrafo</p2>
+                <p2>Este es otro parrafo</p2>
+
+                <div1>Este texto es de importancia !</div1><br>
+
+                <button id="btn9">Agregale color al texto</button>
+
 
               </div>
             </div>
@@ -419,7 +527,7 @@ toggleClass()- Alterna entre agregar/eliminar clases de los elementos selecciona
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-4-21" data-toggle="tab">Método jQuery css()()</a></li>
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-22" data-toggle="tab">Devolver una propiedad CSS</a></li>
                   <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-24" data-toggle="tab">Establecer una propiedad CSS</a></li>
-                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-23" data-toggle="tab">Ejemplo</a></li>
+                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-6-0" data-toggle="tab">Vamos Aprender</a></li>
                
                 
                
@@ -434,35 +542,35 @@ toggleClass()- Alterna entre agregar/eliminar clases de los elementos selecciona
                   <p>El css()método establece o devuelve una o más propiedades de estilo para los elementos seleccionados.</p>
                 </div>
                 <div class="tab-pane fade" id="tabs-4-22"><h4>Devolver una propiedad CSS </h4><p>Para devolver el valor de una propiedad CSS específica, use la siguiente sintaxis: <b>css("propertyname");</b> El siguiente ejemplo devolverá el valor de color de fondo del PRIMER elemento coincidente:<img src="images/el1.png" alt="" width="835" height="418"/>
-</div>
-  <div class="tab-pane fade" id="tabs-4-24"><h4>Devolver una propiedad CSS </h4><p>Para establecer una propiedad CSS específica, use la siguiente sintaxis:
+                </div>
+                  <div class="tab-pane fade" id="tabs-4-24"><h4>Devolver una propiedad CSS </h4><p>Para establecer una propiedad CSS específica, use la siguiente sintaxis:
 
-<b>css("propertyname","value");</b>
-El siguiente ejemplo establecerá el valor de color de fondo para TODOS los elementos coincidentes:
-</div>
- <div class="tab-pane fade" id="tabs-4-23"><h4>ejemplo</h4>
+                <b>css("propertyname","value");</b>
+                El siguiente ejemplo establecerá el valor de color de fondo para TODOS los elementos coincidentes:
+                </div>
+                 <div class="tab-pane fade" id="tabs-6-0"><h4>Ejemplo</h4>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("button").click(function(){
-    alert("Background color = " + $("p").css("background-color"));
-  });
-});
-</script>
-</head>
-<body>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+                <script>
+                $(document).ready(function(){
+                  $("#btn10").click(function(){
+                    $("p4").css("background-color", "yellow");
+                  });
+                });
+                </script>
+                </head>
+                <body>
 
+                <h2>Este es el encabezado</h2>
 
-<p style="background-color:#ff0000">ROJO</p>
-<p style="background-color:#00ff00">VERDE</p>
-<p style="background-color:#0000ff">AZUL</p>
+                <p4 style="background-color:#ff0000">Este es un parrafo de color rojo</p>
+                <p4 style="background-color:#00ff00">Este es un parrafo de color verde</p>
+                <p4 style="background-color:#0000ff">Este es un parrafo de color azul</p>
 
-<br>
-<button>linea CSS</button>
+                <p4>Este es un parrafo</p>
 
-
-</div>
+                <button id="btn10">Cambiar de color</button>
+                </div>
 
                      
                 </div>
@@ -481,7 +589,7 @@ $(document).ready(function(){
               <ul class="nav list-category list-category-down-md-inline-block">
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-4-25" data-toggle="tab">Métodos jQuery width() y height()</a></li>
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-26" data-toggle="tab">Métodos jQuery innerWidth() y innerHeight()</a></li>
-                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="#tabs-4-27" data-toggle="tab">Vamos a aprender </a></li>
+                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="#tabs-7-0" data-toggle="tab">Vamos a aprender </a></li>
                
               
             </div>
@@ -501,39 +609,39 @@ $(document).ready(function(){
                   <li>El innerHeight()método devuelve la altura de un elemento (incluye relleno).</li>
 </p>
                 </div>
-                 <div class="tab-pane fade" id="tabs-4-27"><h4>Vamos a aprender</h4><p>
+                 <div class="tab-pane fade" id="tabs-7-0"><h4>Ejemplo</h4><p>
                  El siguiente ejemplo devuelve el ancho y alto de un "div"elemento especificado.</p>
               
                   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("button").click(function(){
-    var txt = "";
-    txt += "Width of div: " + $("#div1").width() + "</br>";
-    txt += "Height of div: " + $("#div1").height() + "</br>";
-    txt += "Outer width of div (margin included): " + $("#div1").outerWidth(true) + "</br>";
-    txt += "Outer height of div (margin included): " + $("#div1").outerHeight(true);
-    $("#div1").html(txt);
-  });
-});
-</script>
-<style>
-#div1 {
-  height: 100px;
-  width: 300px;
-  padding: 10px;
-  margin: 3px;
-  border: 1px solid blue;
-  background-color: lightblue;
-}
-</style>
-</head>
-<body>
+                  <script>
+                  $(document).ready(function(){
+                    $("#btn11").click(function(){
+                      var txt = "";
+                      txt += "Width of div: " + $("#div1").width() + "</br>";
+                      txt += "Height of div: " + $("#div1").height() + "</br>";
+                      txt += "Outer width of div (margin included): " + $("#div1").outerWidth(true) + "</br>";
+                      txt += "Outer height of div (margin included): " + $("#div1").outerHeight(true);
+                      $("#div1").html(txt);
+                    });
+                  });
+                  </script>
+                  <style>
+                  #div1 {
+                    height: 300px;
+                    width: 300px;
+                    padding: 10px;
+                    margin: 3px;
+                    border: 1px solid blue;
+                    background-color: lightblue;
+                  }
+                  </style>
+                  </head>
+                  <body>
 
-<div id="div1"></div>
-<br>
+                  <div id="div1"></div>
+                  <br>
 
-<button>Ver dimensiones</button>
+                  <button id="btn11">Ver dimensiones</button>
 </div>
                 </div>
                
