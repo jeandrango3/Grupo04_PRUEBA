@@ -1301,9 +1301,10 @@
 		}
 		const typed = new Typed('.typed', {
 			strings:[
-				' <i class= "obj">SET </i>' ,
 				' <i class= "obj">GET </i>' ,
+				' <i class= "obj">SET </i>' ,
 				' <i class= "obj">ADD </i>' ,
+				' <i class= "obj">Remove</i>' ,
 				' <i class= "obj">CSS ClasseS </i>' ,
 				' <i class= "obj">CSS() </i>' ,
 				' <i class= "obj">DIMENSIONS</i>' 
